@@ -1,0 +1,50 @@
+.wrapper {
+  width: 970px;
+  background-color: lightgrey;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.wrapper > h1{
+	display: inline;
+	margin: 30px;
+
+}
+
+.wrapper > h2{
+	display: inline;
+	float: right;
+}
+
+
+.content {
+	width: 970px;
+	background-color: darkred;
+	margin: 20px;
+	
+}
+
+.top{
+	display: flex;
+}
+
+.about{
+	width: 400px;
+}
+.media{
+	display: flex;
+}
+
+
+.tableheader{
+	background-color: grey;
+
+}
+
+.port{
+	margin: 10px;
+}
+.tablefooter {
+	border-radius: 10px;
+	background-color: green;
+}

@@ -1,0 +1,69 @@
+1.
+
+function resetNegatives(arr){
+	for (var i=0; i<arr.length; i++){
+		if (arr[i] < 0){
+			arr[i] = 0;
+		}
+	}
+	return arr;
+}
+
+2.
+
+function moveForward(arr){
+	for (var i=0; i< arr.length-1; i++){
+		arr[i] = arr[i+1];
+	}
+	arr[arr.length-1] = 0;
+	return arr;
+}
+
+
+
+
+3.
+
+function returnReversed(arr){
+	len = arr.length
+	for (var i=0; i<len/2; i++){
+		temp = arr[i];
+		arr[i] = arr[len-1-i];
+		arr[len-1-i] = temp;
+	}
+	return arr;
+}
+
+
+4.
+
+function repeatTwice(arr){
+	z = [];
+	len = arr.length;
+	for (var i=0; i< len; i++){
+		z.push(arr[i])
+		z.push(arr[i])
+	}
+	return z;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

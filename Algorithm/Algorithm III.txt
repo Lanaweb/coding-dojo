@@ -1,0 +1,138 @@
+Part 1
+
+1.
+
+var   val
+x     5
+y     5
+
+outuput:  5
+
+
+2.
+
+var   val
+x     2
+y     2
+z     [] -> [2] -> [2,2] -> [2,2,5]
+
+b     [2,2,5]
+
+var   val
+x     6
+y     8
+z     [] -> [6] -> [6,8] -? [6,8,5]
+
+output: [2,2,5], [6,8,5]
+
+
+3.
+
+var   val
+z     [] -> [2] -> [] -> [2] -> [2,2]
+y     [2,2] -> [2,2,2]
+
+output: [2,2,2]
+
+4.
+
+var   val
+x[0]  2
+x[1]  3
+b     true
+
+output: true
+
+5.
+
+var   val
+i.    0 -> 1 ->2 ->3 ->4 
+x.    [1,2,3,4] -> ['Coding', 2,3,4] -> ['Coding', 'Coding', 3,4] -> ['Coding', 'Coding', 'Coding', 4] -> ['Coding', 'Coding', 'Coding', 'Coding']
+
+output: 'Coding', 'Coding', 'Coding', 'Coding']
+
+6.
+
+var   val
+i.    0 -> 1 ->2->3->4
+
+x.    [5, 7, -1, 4] -> [5, 7,-1,4] -> [5, "Coding", -1, 4] -> [5, "Coding", "Dojo", 4] -> [5, "Coding", "Dojo", 4]
+
+
+7. 
+
+var   val
+x     [5,10]
+b.    10
+
+output: 10
+
+8.
+The function will output the sum of all the values of an array, but it isn't called.
+
+Part 2
+
+
+1. 
+
+function printAverage(x){
+	sum =0;
+	for (var i =0; i< x.length; i++){
+		sum = sum + x[i];
+	}
+	return sum/x.length
+}
+
+
+2.
+
+function returnOddArray(){
+	z = [];
+	for (var i=1; i< 256; i +=2 ){
+		z.push(i)
+	}
+	return z;
+}
+
+3.
+function squareValue(x){
+   for (var i=0; i< x.length; i++){
+   	x[i] = x[i] * x[i];
+   }
+   return x;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

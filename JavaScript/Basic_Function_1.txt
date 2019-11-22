@@ -1,0 +1,145 @@
+
+Basic Function 1
+
+Result: 14/15
+
+1. 
+
+var.     val
+a().     35
+
+pre output: 35
+act output: 35
+
+2.
+var      val
+a().     4
+
+pre output: 8
+act output: 8
+
+
+3.
+
+var.     val
+a(2).    2
+a(4).    4
+
+pre output: 6
+act output: 6
+
+4.
+
+var.     val
+a(3).    9
+
+pre output: 3 9
+act output: 3 9
+
+5.
+
+var.     val
+a(10).   40
+
+pre output: 40
+act output: 40
+
+6.
+
+var.     val
+a(15).   4
+
+pre output: 4
+act output: 4
+
+7.
+
+var.     val
+a(3,10)  30
+
+pre output: 10  3   30
+act output: 10  3   30
+
+
+8.
+
+var.     val
+
+
+pre output: 3   4
+act output: 3   4
+
+
+9.
+
+var.     val
+i        0 -> 2 ->3 -> 5 ->6 ->8 ->9 -> 11 -> 12
+
+pre output: 2  5 8 11
+act output: 2  5 8 11
+
+10.
+
+var.          val
+i < 10       0 -> 1 -> 2 -> 3 ->4 -> 5 -> 6 -> 7 -> 8 ->9 ->10
+a(0,10)        0
+
+pre output: 0 1 2 3 4 5 6 7 8 9 0
+act output: 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0
+
+
+11.
+
+var.     val
+
+
+pre output: 
+act output:
+
+
+12.
+
+var.     val
+
+
+pre output: 
+act output:
+
+
+13.
+
+var.     val
+z        10
+
+pre output: 10
+act output: 10
+
+14.
+
+var.         val
+glo z        10 
+loc z        15
+
+pre output: 15   10
+act output: 15   10
+
+
+15.
+
+var.         val
+glo z        10 
+loc z        15
+glo z        15
+
+pre output: 15   15
+act output: 15   15
+
+
+
+
+
+
+
+
+
+

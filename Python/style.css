@@ -1,0 +1,148 @@
+			div.wrapper{
+				width: 980px;
+				background-color: rgb(36,81,118);
+				margin: 0px auto;
+			}
+		
+			.top img{
+				width: 400px;
+				margin: 20px 280px 0px 30px;
+				display: inline-block;
+				vertical-align: top;
+			}
+			.top-left{
+				display: inline-block;
+				vertical-align: top;
+				margin-top: 20px;
+			}
+			.top-left h3{
+				color: white;
+				font-size: 14px;
+				margin-left: 80px;
+			}
+			.top-left a{
+				color: rgb(213, 179, 0);
+				padding-right: 10px;
+			}
+			.top-left span{
+				margin-right: 5px;
+				border-right: 2px solid black;
+			}
+			.top form{
+				border-radius: 10px;
+				width: 200px;
+				background-color: rgb(68, 68, 68);
+				padding: 20px 28px;
+				box-shadow: 4px 4px black;
+			}
+			.top-left form input{
+				text-align: center;
+				padding: 8px 4px;
+			}
+			.top form button{
+				background-color: rgb(36, 81, 118);
+				color: white;
+				padding: 6px 10px;
+				b
+			}
+			
+			.nav{
+				border-radius: 6px;
+				width: 790px;
+				background-color: rgb(65, 120, 167);
+				margin-left: 109px;
+				text-align: center;
+				padding-left: 0px;
+				box-shadow: 4px 4px grey;
+			}
+			.nav li{
+				color: white;
+				font-size: 19px;
+				display: inline-block;
+				padding: 12px 20px;
+			}
+			.top-bottom-part ul{
+				margin-right: 140px;
+				display: inline-block;
+				vertical-align: top;
+				text-align: center;
+				list-style: none;
+				margin-left:20px;
+			}
+			.top-bottom-part ul li{
+				padding: 8px 6px;
+			}
+			.top-bottom-part ul li a{
+				text-decoration: underline;
+				color: white;
+				font-size: 15px;
+			}
+			.top-bottom-part li:before{
+				content: ">>";
+				color: yellow;
+				font-size: 8px;
+				padding: 5px;
+			}
+			.bottom-text{
+				width: 600px;
+				display: inline-block;
+				text-align: center;
+			}
+			#description{
+				color: white;
+				font-size: 14px;
+			}
+			.yellow{
+				color: rgb(248, 207, 48);
+				font-style: italic;
+				font-size: 18px;
+			}
+			#Zen {
+				color: white;
+			}
+			.middle{
+				width: 980px;
+				margin: 0px auto;
+			}
+			.content{
+				width: 440px;
+				margin: 24px;
+				display: inline-block;
+				vertical-align: top;
+				border-top: 4px solid rgb(115, 167, 213);
+				text-align: center;
+			}
+			.content p{
+				overflow:hidden;
+				font-size: 14px;
+				height: 50px;
+			}
+			.content li span{
+				color: rgb(119, 170, 215);
+				font-size: 14px;
+			}
+			
+			.content span{
+				color:rgb(119, 170, 215);
+				font-size: 14px;
+			}
+			.bottom{
+				width: 980px;
+				background-color: rgb(36,81,118);
+				margin: 0px auto;
+			}
+			
+			.bottom li{
+				display: inline-block;
+				width: 260px;
+				padding: 25px;
+				text-align: center;
+				color: rgb(119, 170, 215);
+				margin-top: 20px;
+				font-size: 18px;
+			}
+			.footer p{
+				text-align: center;
+				color: rgb(119, 170, 215);
+				font-size: 12px;
+			}
