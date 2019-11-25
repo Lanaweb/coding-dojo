@@ -1,0 +1,28 @@
+SELECT a.address, c.first_name, c.last_name, c.email FROM address a JOIN customer c ON a.address_id = c.address_id 
+WHERE a.address_id in (SELECT a.address_id FROM address a WHERE a.city_id = "312");
+
+SELECT f.title, f.description, f.release_year, f.rating, f.special_features, fc.category_id as genre FROM film f join
+film_category fc on f.film_id = f.film_id 
+JOIN category c on fc.category_id = c.category_id where (c.name = "comedy");
+
+SELECT a.actor_id, a.first_name, a.last_name, f.title, f.description, f.release_year from film f join
+film_actor fm on f.film_id = fm.film_id join actor a on a.actor_id = fm.actor_id 
+where (a.actor_id = "5");
+
+SELECT c.first_name, c.last_name, c.email, a.address from customer c join address a on c.address_id = a.address_id
+where c.store_id = "1" AND a.city_id in ( "1","42","312","459"); 
+
+SELECT f.title, f.description, f.release_year, f.rating, f.special_features from film f join film_actor fa on
+f.film_id = fa.film_id WHERE fa.actor_id = "15" AND f.rating = "G" AND f.special_features like "b%";
+
+SELECT f.film_id, f.title, fa.actor_id, concat(a.first_name, " ", a.last_name) as actor_name from film f join
+film_actor fa on f.film_id = fa.film_id join actor a on fa.actor_id = a.actor_id where f.film_id = "369";
+
+SELECT f.title, f.description, f.release_year, f.rating, f.special_features, c.name FROM film f join
+film_category fc on f.film_id = fc.film_id join category c on fc.category_id = c.category_id WHERE 
+f.rental_rate = "2.99" and c.name = "drama";
+
+SELECT f.title, f.description, f.release_year, f.rating, f.special_features, c.name as genre, a.first_name, a.last_name
+from film f join film_category fc on f.film_id = fc.film_id join category c on fc.category_id = c.category_id
+join film_actor fa on f.film_id = fa.film_id join actor a on fa.actor_id = a.actor_id 
+WHERE upper(a.first_name) = "SANDRA" AND UPPER(a.last_name) = "KILMER" AND c.name = "action";
