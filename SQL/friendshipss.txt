@@ -1,0 +1,40 @@
+SELECT u1.first_name, u1.last_name, u2.first_name as friend_first_name, u2.last_name as friend_last_name FROM users u1
+JOIN friendships f ON u1.id= f.user_id
+JOIN users u2 on f.friend_id = u2.id;
+ 
+SELECT u1.first_name, u1.last_name, u2.first_name as friend_first_name, u2.last_name as friend_last_name FROM users u1
+JOIN friendships f ON u1.id= f.user_id
+JOIN users u2 on f.friend_id = u2.id where u1.first_name ="Kermit" or u2.first_name ="Kermit";
+ 
+SELECT count(c.first_name) FROM (SELECT u1.first_name, u1.last_name, u2.first_name as friend_first_name, u2.last_name as friend_last_name FROM users u1
+JOIN friendships f ON u1.id= f.user_id
+JOIN users u2 on f.friend_id = u2.id) as c;
+ 
+SELECT * FROM  (SELECT count(c.name) as count, c.name FROM (SELECT concat(u1.first_name," ", u1.last_name) as name, u2.first_name as friend_first_name, u2.last_name as friend_last_name FROM users u1 JOIN friendships f ON u1.id= f.user_id
+JOIN users u2 on f.friend_id = u2.id) as c 
+group by c.name) as s 
+order by s.name
+LIMIT 1;
+
+SELECT s.first_name, s.last_name from
+(SELECT u1.first_name, u1.last_name, u2.first_name as friend_first_name, u2.last_name as friend_last_name FROM users u1
+JOIN friendships f ON u1.id= f.user_id
+JOIN users u2 on f.friend_id = u2.id
+WHERE u1.first_name = "Eli" OR u2.first_name = "Eli") as s where s.first_name != "Eli"
+UNION
+SELECT s.friend_first_name as first_name, s.friend_last_name as first_name from 
+(SELECT u1.first_name, u1.last_name, u2.first_name as friend_first_name, u2.last_name as friend_last_name FROM users u1
+JOIN friendships f ON u1.id= f.user_id
+JOIN users u2 on f.friend_id = u2.id
+WHERE u1.first_name = "Eli" OR u2.first_name = "Eli") as s where s.friend_first_name != "Eli"
+order by first_name;
+
+
+DELETE FROM friendships f
+WHERE f.user_id= (SELECT u.id FROM users u WHERE u.first_name ="Eli" )
+AND 
+f.friend_id = (SELECT u.id FROM users u WHERE u.first_name = "Marky" and u.last_name = "Mark");
+
+SELECT u1.first_name, u1.last_name, u2.first_name as friend_first_name, u2.last_name as friend_last_name FROM users u1
+JOIN friendships f ON u1.id= f.user_id
+JOIN users u2 on f.friend_id = u2.id;
