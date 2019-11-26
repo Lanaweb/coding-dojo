@@ -20,13 +20,30 @@ class User:
 
 emily = User("Emily Ding", "emily@gmail.com")
 nicole = User("Nicole Ding", "nicole@gmail.com")
-print(emily.name)
-print(emily.email)
-print(nicole.account_balance)
+joy = User("Joy Li", "joy@gmail.com")
 
-emily.make_deposit(200)
+emily.make_deposit(2800)
+emily.make_deposit(100)
+emily.make_deposit(100)
+emily.make_withdrawal(100)
+emily.make_withdrawal(20)
+
+
+nicole.make_deposit(200)
+nicole.make_deposit(800)
+nicole.make_withdrawal(20)
+nicole.make_withdrawal(10)
+
+joy.make_deposit(10000)
+joy.make_withdrawal(10)
+joy.make_withdrawal(70)
 
 emily.display_user_balance()
-emily.transfer_money(nicole,100)
+nicole.display_user_balance()
+joy.display_user_balance()
+
+emily.transfer_money(joy, 888)
+
 emily.display_user_balance()
-print(nicole.account_balance)
+
+joy.display_user_balance()
