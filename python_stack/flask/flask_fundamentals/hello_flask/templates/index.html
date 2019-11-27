@@ -1,0 +1,22 @@
+<!DOCTYPE html5>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Index HTML</title>
+		<meta name="description" content="The HTML5 Herald">
+		<meta name="author" content="SitePoint">
+	</head>
+	<body>
+		<h3>My Flask Template</h3>
+		<p>Phrase: {{ phrase }}</p>
+		<p>Times: {{ times }}</p>
+		
+		{% for x in range(0,times): %}
+			<p>{{ phrase }}</p>
+		{% endfor %}
+		
+		{% if phrase == "hello" %}
+			<p>The phrase says hello</p>
+		{% endif %}
+	</body>
+</html>
