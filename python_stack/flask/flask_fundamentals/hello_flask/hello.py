@@ -14,13 +14,13 @@ def hi(name):
     #print(name)
     return 'Hi, ' + name
 
-@app.route('/repeat/<int:times>/<string>') # for a route '/users/____/____', two parameters in the url get passed as username and id
+@app.route('/repeat/<times>/<string>') # for a route '/users/____/____', two parameters in the url get passed as username and id
 def repeat_string_times(times, string):
 #    if type(times) != int:
 #        return "Sorry! No response. Try again."
 #
 #    else:
-    return string * times
+    return string * int(times)
 
 if __name__=="__main__":   # Ensure this file is being run directly and not from a different module
     app.run(debug=True)    # Run the app in debug mode.
